@@ -42,9 +42,9 @@ const App = () => {
   return (
     <div>
       <h1>Posts</h1>
-      {posts.map(post => (
+      {posts.map((post, i) => (
         <div key={post.id}>
-          <h2>1. {post.title}</h2>
+          <h2>{post.id}. {post.title}</h2>
           <p>{post.body}</p>
         </div>
       ))}
