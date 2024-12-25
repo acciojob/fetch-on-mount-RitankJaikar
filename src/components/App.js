@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import './../styles/App.css';
 
-const FetchOnMount = () => {
+const App = () => {
   // State to store the posts data and loading state
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -57,6 +58,6 @@ const FetchOnMount = () => {
       ))}
     </div>
   );
-};
+}
 
-export default FetchOnMount;
+export default App;
